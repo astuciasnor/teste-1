@@ -6,3 +6,5 @@ Esta segunda linha serve para verificar se  o Git/Github estão sincronizados e 
 2. Faça commit e depois
 3. Clique em Push
 4. Atualize o repositório na internet para ver se todas estas linhas foram incluidas no arquivo do Readme.md
+
+   Esta linha é para verificar o botão de pull.
