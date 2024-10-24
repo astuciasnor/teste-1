@@ -10,5 +10,6 @@ df |>
   ggplot(aes(x, y)) +
   geom_point(col = "steelblue") +
   geom_smooth() +
-  theme_minimal()
+  theme_minimal() +
+  geom_vline(xintercept = 0)
 
