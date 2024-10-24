@@ -1,10 +1,14 @@
-x <- 10
-y <- 20
+library(tidyverse)
+x <- -10:10
+y <- x^2 + rnorm(21, 0, 1)
 
-df <- c(x,y)
+df <- tibble::tibble(x, y)
 df
 
-x + y
-x - y
-x * y
-x / y
+# Fazendo um grafico
+df |> 
+  ggplot(aes(x, y)) +
+  geom_point(col = "steelblue") +
+  geom_smooth() +
+  theme_minimal()
+
