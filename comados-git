@@ -1,0 +1,37 @@
+--------------------LISTA DE PRINCIPAIS COMANDOS DO GIT------------------------
+1) Mantenedor/Proprietário
+
+git checkout master
+git pull
+git checkout -b nome-da-branch
+git add .
+git commit -m "Descrição das alterações"
+git push --set-upstream origin nome-da-branch
+Aguarde Pull request e Merge no Github
+git checkout master
+git pull
+git merge nome-da-branch
+git push
+git branch -d nome-da-branch
+git push origin --delete nome-da-branch
+
+2) Colaborador
+git checkout master
+git pull origin master
+git checkout -b nome-da-branch
+git add .
+git commit -m "Descrição clara e objetiva das alterações"
+git push origin nome-da-branch
+Aguarde Pull request e Merge no Github
+git checkout master
+git pull
+git branch -d nome-da-branch
+git push origin --delete nome-da-branch
+
+3) Movendo Alterações Não Commitadas para uma Nova Branch
+git status
+git checkout -b nova-branch
+git status
+git add .
+git commit -m "Descrição das alterações"
+Siga os passos a partir do push, conforme cada caso acima
